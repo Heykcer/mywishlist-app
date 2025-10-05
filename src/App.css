@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.content-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 72, 100, 0.15);
+  padding: 32px 28px 24px 28px;
+  margin-bottom: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-box:focus {
+  border-color: #6366f1;
+}
+
+.add-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #4f46e5;
+}
+
+.list-section {
+  margin-top: 10px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: #e0e7ff;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.checkbox {
+  accent-color: #6366f1;
+  width: 18px;
+  height: 18px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #d11a2a;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+.empty-list {
+  text-align: center;
+  color: #9ca3af;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.footer {
+  margin-top: 32px;
+  padding: 18px 0 0 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+  background: none;
+}
+
+.footer-links {
+  display: inline-flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.footer a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #4f46e5;
 }
