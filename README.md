@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Getting Started with My WishList App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+
+## Features
+
+- Add items to your wishlist
+- View all wishlist items
+- Remove items from your wishlist
+- Responsive design for desktop and mobile
+
+## Technology Stack
+
+- **Frontend:** React.js
+- **Styling:** CSS
+- **Version Control:** Git & GitHub
+
+## Folder Structure
+
+
+
 
 ## Available Scripts
 
